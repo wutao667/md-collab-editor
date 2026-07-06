@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: md-collab-editor
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./agent-inbox:/app/agent-inbox
+    environment:
+      - ACCESS_TOKEN=${ACCESS_TOKEN:-}
+      - PORT=3000
+      - REPOS_DIR=/app/data/repos/default
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped

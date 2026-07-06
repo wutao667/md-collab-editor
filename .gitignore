@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+
+# Client build output
+client/dist/
+
+# Data directory (actual documents)
+data/
+
+# Agent inbox
+agent-inbox/
+
+# Environment variables
+.env
+
+# SQLite databases
+*.db
+*.db-wal
+*.db-shm
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Internal design documents (not for public repo)
+final-spec.md
+technical-assessment.md
+
+# Logs
+*.log
