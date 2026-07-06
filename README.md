@@ -16,6 +16,12 @@ A lightweight, real-time Markdown collaboration editor with Git version manageme
 - 🐳 **Docker Compose** deployment with health checks
 - 📁 **Auto file watching** — detect external file changes and broadcast them
 
+## Screenshot
+
+![Editor Screenshot](screenshots/screenshot.png)
+
+> Markdown editor (left) with live preview (right) in the MD-Collab-Editor web UI.
+
 ## Tech Stack
 
 | Layer | Technology |
